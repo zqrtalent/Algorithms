@@ -28,12 +28,14 @@ string GetExecutableDirectory()
 
 void HackerrankProblems_RunningMedian();
 void HackerrankProblems_Equal();
+void HackerrankProblems_MergeSortCountingInversion();
 
 int main()
 {
     cout << "Hello world!" << endl;
     //HackerrankProblems_RunningMedian();
-    HackerrankProblems_Equal();
+    //HackerrankProblems_Equal();
+    HackerrankProblems_MergeSortCountingInversion();
     
 /*
     map<string, int> mapTest;
@@ -107,4 +109,20 @@ void HackerrankProblems_Equal()
     if(fExactOutput.is_open())
         fExactOutput.close();
     // Median problem. [END]
+}
+
+void HackerrankProblems_MergeSortCountingInversion()
+{
+    fstream fInput;
+    fInput.open(GetExecutableDirectory() + "input-countinginversions.txt", ios_base::in);
+
+    fstream fExactOutput;
+    fExactOutput.open(GetExecutableDirectory() + "exact-output-countinginversions.txt", ios_base::in);
+
+    MergeSortCountingInversions(fInput, fExactOutput);
+
+    if(fInput.is_open())
+        fInput.close();
+    if(fExactOutput.is_open())
+        fExactOutput.close();
 }

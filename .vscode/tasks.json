@@ -13,7 +13,8 @@
 
         "./HackerrankProblem/global.cpp",
         "./HackerrankProblem/FindTheRunningMedian.cpp",
-        "./HackerrankProblem/Equal.cpp"
+        "./HackerrankProblem/Equal.cpp",
+        "./HackerrankProblem/CountingInversions.cpp"
     ]
 
 }
